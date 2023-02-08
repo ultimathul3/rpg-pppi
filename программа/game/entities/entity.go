@@ -9,3 +9,7 @@ type Entity struct {
 	Damage        int
 	Armor         int
 }
+
+func (e *Entity) Move() {
+
+}
