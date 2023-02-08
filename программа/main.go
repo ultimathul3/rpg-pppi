@@ -14,6 +14,8 @@ type Game struct {
 	Story        game.Story
 	World        game.World
 	Singleplayer game.Singleplayer
+	Combat       game.Combat
+	Collisions   game.Collisions
 }
 
 func (g *Game) Run() {
