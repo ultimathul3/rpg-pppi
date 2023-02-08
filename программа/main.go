@@ -19,6 +19,8 @@ type Game struct {
 	Achievements game.Achievements
 	Saves        game.Saves
 	Dialogs      game.Dialogs
+	Inventory    game.Inventory
+	Equipment    game.Equipment
 }
 
 func (g *Game) Run() {
