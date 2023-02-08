@@ -8,3 +8,7 @@ type Audio struct {
 func (a *Audio) PlayMusic() {
 
 }
+
+func (a *Audio) PlaySounds() {
+
+}
