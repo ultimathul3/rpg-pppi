@@ -9,3 +9,7 @@ type Interaction struct {
 func (i *Interaction) SendState() {
 
 }
+
+func (i *Interaction) ReceiveState() {
+
+}
