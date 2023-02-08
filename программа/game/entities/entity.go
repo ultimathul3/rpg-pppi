@@ -17,3 +17,7 @@ func (e *Entity) Move() {
 func (e *Entity) Attack() {
 
 }
+
+func (e *Entity) Draw() {
+
+}
