@@ -21,6 +21,10 @@ type Game struct {
 	Dialogs      game.Dialogs
 	Inventory    game.Inventory
 	Equipment    game.Equipment
+	Skills       game.Skills
+	Quests       game.Quests
+	Map          game.Map
+	Multiplayer  game.Multiplayer
 }
 
 func (g *Game) Run() {
