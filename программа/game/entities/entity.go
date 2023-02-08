@@ -13,3 +13,7 @@ type Entity struct {
 func (e *Entity) Move() {
 
 }
+
+func (e *Entity) Attack() {
+
+}
