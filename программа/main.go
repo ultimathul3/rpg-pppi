@@ -6,12 +6,14 @@ import (
 )
 
 type Game struct {
-	Audio   engine.Audio
-	Draw    engine.Drawer
-	Shaders engine.Shaders
-	Text    engine.Text
-	Menu    game.Menu
-	Story   game.Story
+	Audio        engine.Audio
+	Draw         engine.Drawer
+	Shaders      engine.Shaders
+	Text         engine.Text
+	Menu         game.Menu
+	Story        game.Story
+	World        game.World
+	Singleplayer game.Singleplayer
 }
 
 func (g *Game) Run() {
