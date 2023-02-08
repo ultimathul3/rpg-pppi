@@ -3,6 +3,7 @@ package main
 import (
 	"game/engine"
 	"game/game"
+	"game/network"
 )
 
 type Game struct {
@@ -25,6 +26,8 @@ type Game struct {
 	Quests       game.Quests
 	Map          game.Map
 	Multiplayer  game.Multiplayer
+	Chat         network.Chat
+	Interaction  network.Interaction
 }
 
 func (g *Game) Run() {
