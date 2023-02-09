@@ -1,14 +1,14 @@
 /*
 ** Starscream 680x0 emulation library
 ** Copyright 1997, 1998, 1999 Neill Corlett
-** Modified by Stéphane Dallongeville (1999, 2000, 2001, 2002)
+** Modified by Stï¿½phane Dallongeville (1999, 2000, 2001, 2002)
 ** Used for the sub 68000 CPU emulation in Gens
 **
 ** Refer to STARDOC.TXT for terms of use, API reference, and directions on
 ** how to compile.
 */
 
-#define VERSION "S0.26d"
+#define VERSION "S0.26e"
 
 /***************************************************************************/
 /*
