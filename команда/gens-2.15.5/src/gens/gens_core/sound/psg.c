@@ -5,8 +5,8 @@
 /* Noise define constantes taken from MAME                 */
 /*                                                         */
 /* This source is a part of Gens project                   */
-/* Written by Stéphane Dallongeville (gens@consolemul.com) */
-/* Copyright (c) 2002 by Stéphane Dallongeville            */
+/* Written by Stï¿½phane Dallongeville (gens@consolemul.com) */
+/* Copyright (c) 2002 by Stï¿½phane Dallongeville            */
 /*                                                         */
 /***********************************************************/
 
@@ -18,7 +18,7 @@
 /* Defines */
 
 #ifndef PI
-#define PI 3.14159265358979323846
+#define PI 3.141592653589
 #endif
 
 // Change MAX_OUTPUT to change PSG volume (default = 0x7FFF)
