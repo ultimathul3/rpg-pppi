@@ -57,7 +57,7 @@ DWORD (*Send_ASPI_Command) (LPSRB);
 int ASPI_Command_Running;
 int CDROM_SPEED;
 int Num_CD_Drive;
-int CUR_DEV;
+int CUR_DEV; // a che serve?
 int DEV_PAR[8][3];
 unsigned int Current_LBA;
 BYTE Buf_Stat[256];

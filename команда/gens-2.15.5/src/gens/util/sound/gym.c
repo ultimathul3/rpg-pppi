@@ -52,7 +52,7 @@ Start_GYM_Dump (void)
 
   do
     {
-      if (num++ > 150000)
+      if (num++ > 99999)
 	{
 	  Put_Info ("Too much GYM files in your GYM directory", 1000);
 	  GYM_File = NULL;

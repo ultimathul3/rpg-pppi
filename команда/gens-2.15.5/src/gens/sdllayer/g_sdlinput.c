@@ -705,7 +705,86 @@ Setting_Keys (GtkWidget * control_window, int Player, int TypeP)
 }
 
 void
-Scan_Player_Net (int Player) { }
+Scan_Player_Net (int Player)
+{
+#if 0
+  if (!Player)
+    return;
+
+  Update_Input ();
+
+  if (Check_Key_Pressed (Keys_Def[0].Up))
+    {
+      Kaillera_Keys[0] &= ~0x08;
+      Kaillera_Keys[0] |= 0x04;
+    }
+  else
+    {
+      Kaillera_Keys[0] |= 0x08;
+      if (Check_Key_Pressed (Keys_Def[0].Down))
+	Kaillera_Keys[0] &= ~0x04;
+      else
+	Kaillera_Keys[0] |= 0x04;
+    }
+
+  if (Check_Key_Pressed (Keys_Def[0].Left))
+    {
+      Kaillera_Keys[0] &= ~0x02;
+      Kaillera_Keys[0] |= 0x01;
+    }
+  else
+    {
+      Kaillera_Keys[0] |= 0x02;
+      if (Check_Key_Pressed (Keys_Def[0].Right))
+	Kaillera_Keys[0] &= ~0x01;
+      else
+	Kaillera_Keys[0] |= 0x01;
+    }
+
+  if (Check_Key_Pressed (Keys_Def[0].Start))
+    Kaillera_Keys[0] &= ~0x80;
+  else
+    Kaillera_Keys[0] |= 0x80;
+
+  if (Check_Key_Pressed (Keys_Def[0].A))
+    Kaillera_Keys[0] &= ~0x40;
+  else
+    Kaillera_Keys[0] |= 0x40;
+
+  if (Check_Key_Pressed (Keys_Def[0].B))
+    Kaillera_Keys[0] &= ~0x20;
+  else
+    Kaillera_Keys[0] |= 0x20;
+
+  if (Check_Key_Pressed (Keys_Def[0].C))
+    Kaillera_Keys[0] &= ~0x10;
+  else
+    Kaillera_Keys[0] |= 0x10;
+
+  if (Controller_1_Type & 1)
+    {
+      if (Check_Key_Pressed (Keys_Def[0].Mode))
+	Kaillera_Keys[1] &= ~0x08;
+      else
+	Kaillera_Keys[1] |= 0x08;
+
+      if (Check_Key_Pressed (Keys_Def[0].X))
+	Kaillera_Keys[1] &= ~0x04;
+      else
+	Kaillera_Keys[1] |= 0x04;
+
+      if (Check_Key_Pressed (Keys_Def[0].Y))
+	Kaillera_Keys[1] &= ~0x02;
+      else
+	Kaillera_Keys[1] |= 0x02;
+
+      if (Check_Key_Pressed (Keys_Def[0].Z))
+	Kaillera_Keys[1] &= ~0x01;
+      else
+	Kaillera_Keys[1] |= 0x01;
+    }
+#endif
+}
 
 
 void

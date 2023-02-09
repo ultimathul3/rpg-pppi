@@ -155,7 +155,7 @@ Save_Shot (unsigned char *Screen, int mode, int X, int Y, int Pitch)
       Dest = NULL;
     }
 
-  sprintf (Name, "Screenshot %d saved", num);
+  sprintf (Name, "Screen shot %d saved", num);
   Put_Info (Name, 1500);
 
   return (1);

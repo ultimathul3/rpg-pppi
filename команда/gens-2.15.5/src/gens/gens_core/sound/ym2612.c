@@ -26,10 +26,10 @@
 #define PI 3.14159265358979323846
 #endif
 
-#define ATTACK    1
-#define DECAY     2
-#define SUBSTAIN  3
-#define RELEASE   4
+#define ATTACK    0
+#define DECAY     1
+#define SUBSTAIN  2
+#define RELEASE   3
 
 // SIN_LBITS <= 16
 // LFO_HBITS <= 16
