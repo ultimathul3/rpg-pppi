@@ -44,7 +44,7 @@ int W_VSync;
 int Stretch; 
 int Blit_Soft;
 int Effect_Color = 7;
-int FPS_Style = EMU_MODE | BLANC;
+int FPS_Style = EMU_MODE | BLANC | SIZE_X2;
 int Message_Style = EMU_MODE | BLANC | SIZE_X2;
 int Kaillera_Error = 0;
 
