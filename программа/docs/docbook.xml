@@ -1,0 +1,492 @@
+<book xmlns="http://docbook.org/ns/docbook" version="5.0">
+  <info>
+    <title>Документация RPG игры</title>
+  </info>
+
+  <chapter>
+    <title>Тип Audio</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Audio представляет структуру для воспроизведения звуков и музыки</para>
+    </section>
+
+    <section>
+      <title>Поля</title>
+      <itemizedlist>
+        <listitem><para><literal>MusicVolume</literal> - громкость музыки</para></listitem>
+        <listitem><para><literal>SoundsVolume</literal> - громкость звуков</para></listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>PlayMusic()</literal></title>
+        <para>Метод для воспроизведения музыки</para>
+      </section>
+      <section>
+        <title><literal>PlaySounds()</literal></title>
+        <para>Метод для воспроизведения звуков</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Drawer</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Drawer представляет собой интерфейс для рендеринга изображений</para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Draw()</literal></title>
+        <para>Метод для рендеринга изображений</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Shaders</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Shaders представляет структуру для рендеринга шейдеров</para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Draw()</literal></title>
+        <para>Метод для рендеринга шейдеров</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Text</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Text представляет структуру для рендеринга текста</para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Draw()</literal></title>
+        <para>Метод для рендеринга текста</para>
+      </section>
+      <section>
+        <title><literal>NewText()</literal></title>
+        <para>Метод для создания нового текста</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Entity</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Entity представляет структуру сущности в игре</para>
+    </section>
+
+    <section>
+      <title>Поля</title>
+      <itemizedlist>
+        <listitem><para><literal>HP</literal> - количество здоровья</para></listitem>
+        <listitem><para><literal>MP</literal> - количество маны</para></listitem>
+        <listitem><para><literal>X</literal> - координата X на игровом поле</para></listitem>
+        <listitem><para><literal>Y</literal> - координата Y на игровом поле</para></listitem>
+        <listitem><para><literal>Width</literal> - ширина изображения сущности</para></listitem>
+        <listitem><para><literal>Height</literal> - высота изображения сущности</para></listitem>
+        <listitem><para><literal>Speed</literal> - скорость сущности</para></listitem>
+        <listitem><para><literal>Damage</literal> - урон, наносимый сущностью</para></listitem>
+        <listitem><para><literal>Armor</literal> - броня сущности</para></listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Move()</literal></title>
+        <para>Метод для перемещения сущности по игровому миру</para>
+      </section>
+      <section>
+        <title><literal>Attack()</literal></title>
+        <para>Метод для атаки сущности</para>
+      </section>
+      <section>
+        <title><literal>Draw()</literal></title>
+        <para>Метод для рендеринга изображения сущности</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Mage</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Mage представляет структуру, описывающую класс персонажа "Маг". <literal>Поля и методы см. также в типе Entity</literal></para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Attack()</literal></title>
+        <para>Переопределенный метод для атаки</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Archer</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Archer представляет структуру, описывающую класс персонажа "Лучник". <literal>Поля и методы см. также в типе Entity</literal></para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Attack()</literal></title>
+        <para>Переопределенный метод для атаки</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Caster</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Caster представляет структуру, описывающую класс персонажа "Заклинатель". <literal>Поля и методы см. также в типе Entity</literal></para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Attack()</literal></title>
+        <para>Переопределенный метод для атаки</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Knight</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Knight представляет структуру, описывающую класс персонажа "Рыцарь". <literal>Поля и методы см. также в типе Entity</literal></para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Attack()</literal></title>
+        <para>Переопределенный метод для атаки</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Achievements</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Achievements представляет структуру для реализации системы достижений</para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Achieve()</literal></title>
+        <para>Метод для присвоения достижения</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Collisions</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Collisions представляет структуру для реализации системы взаимодействия с игровым миром</para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Collide(first Entity, second Entity)</literal></title>
+        <para>Метод для определения столкновения между сущностями first и second</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Combat</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Combat представляет структуру для реализации боевой системы</para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Attack(who Entity, whom Entity)</literal></title>
+        <para>Метод для определения поведения при атаке сущностью who сущности whom</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Dialogs</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Dialogs представляет структуру для реализации системы диалогов</para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Start()</literal></title>
+        <para>Метод для начала диалога</para>
+      </section>
+      <section>
+        <title><literal>Next()</literal></title>
+        <para>Метод для перехода к следующей реплике диалога</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Equipment</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Equipment представляет структуру для реализации системы экипировки</para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Equip()</literal></title>
+        <para>Метод для экипировки снаряжения</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Inventory</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Inventory представляет структуру для реализации системы инвентаря</para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Use()</literal></title>
+        <para>Метод для использования предмета</para>
+      </section>
+      <section>
+        <title><literal>PickUp()</literal></title>
+        <para>Метод для перемещения предмета в инвентарь</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Map</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Map представляет структуру для реализации карты игрового мира</para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Open()</literal></title>
+        <para>Метод для открытия карты игрового мира</para>
+      </section>
+      <section>
+        <title><literal>Close()</literal></title>
+        <para>Метод для закрытия карты игрового мира</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Menu</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Menu представляет структуру для реализации игрового меню</para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>SingleplayerClicked()</literal></title>
+        <para>Метод для определения поведения при нажатии на кнопку одиночной игры</para>
+      </section>
+      <section>
+        <title><literal>MultiplayerClicked()</literal></title>
+        <para>Метод для определения поведения при нажатии на кнопку многопользовательской игры</para>
+      </section>
+      <section>
+        <title><literal>ExitClicked()</literal></title>
+        <para>Метод для определения поведения при нажатии на кнопку выхода из игры</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Multiplayer</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Multiplayer представляет структуру для реализации режима многопользовательской игры</para>
+    </section>
+
+    <section>
+      <title>Поля</title>
+      <itemizedlist>
+        <listitem><para><literal>Players</literal> - список игроков типа Entity</para></listitem>
+      </itemizedlist>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Quests</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Quests представляет структуру для реализации системы квестов</para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Take()</literal></title>
+        <para>Метод для определения поведения при взятии квеста</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Saves</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Saves представляет структуру для реализации системы сохранения/загрузки игрового прогресса</para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Save()</literal></title>
+        <para>Метод для сохранения игрового процесса</para>
+      </section>
+      <section>
+        <title><literal>Load()</literal></title>
+        <para>Метод для загрузки игрового процесса</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Singleplayer</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Singleplayer представляет структуру для реализации режима одиночной игры</para>
+    </section>
+
+    <section>
+      <title>Поля</title>
+      <itemizedlist>
+        <listitem><para><literal>Player</literal> - объект игрока типа Entity</para></listitem>
+      </itemizedlist>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Skills</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Skills представляет структуру для реализации системы навыков</para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Improve()</literal></title>
+        <para>Метод для улучшения навыка</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Story</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Story представляет структуру для сюжетной линии игры</para>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип World</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип World представляет структуру для реализации игрового мира в игре</para>
+    </section>
+
+    <section>
+      <title>Поля</title>
+      <itemizedlist>
+        <listitem><para><literal>Entities</literal> - список сущностей игрового мира</para></listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>Generate()</literal></title>
+        <para>Метод для генерации игрового мира</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Chat</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Chat представляет структуру для реализации системы чата в многопользовательской игре</para>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>SendMessage()</literal></title>
+        <para>Метод для отправки сообщения</para>
+      </section>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Тип Interaction</title>
+    <section>
+      <title>Описание</title>
+      <para>Тип Interaction представляет структуру для реализации системы взаимодействия между игроками в многопользовательской режиме</para>
+    </section>
+
+    <section>
+      <title>Поля</title>
+      <itemizedlist>
+        <listitem><para><literal>Players</literal> - список игроков типа Entity</para></listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Методы</title>
+      <section>
+        <title><literal>SendState()</literal></title>
+        <para>Метод для отправки состояния игрока на сервер</para>
+      </section>
+      <section>
+        <title><literal>ReceiveState()</literal></title>
+        <para>Метод для получения состония игроков сервера</para>
+      </section>
+    </section>
+  </chapter>
+</book>
